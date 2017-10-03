@@ -13,8 +13,8 @@ A django app for integrating django rest framework into js
     ]
     
     
-## Load the css_grid library and place the template tags appropriately
-    # polls/templates/polls/list.html
+## Load the drf_edtiable library and place the template tags appropriately
+    # some_html.html
     {% load drfe %}
     <!DOCTYPE html>
 
@@ -25,6 +25,6 @@ A django app for integrating django rest framework into js
             {% drfe_js %}
         </head>
         <body>
-            {% drfe resource='rest_framework:polls:list' %}
+            {% drfe resource='rest_framework:polls:detail' action='PATCH' %}
         </body>
     </html>

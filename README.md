@@ -25,6 +25,6 @@ A django app for integrating django rest framework into js
             {% drfe_js %}
         </head>
         <body>
-            {% drfe resource='rest_framework:polls:detail' action='PATCH' %}
+            {% drfe resource='rest_framework:polls:detail' action='PATCH' fields='name' %}
         </body>
     </html>
